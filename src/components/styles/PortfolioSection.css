@@ -1,0 +1,32 @@
+.portfolio-sec {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-menu {
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.portfolio-menu.hero {
+  bottom: 0;
+}
+
+
+.portfolio-menu.skills {
+  right: 0;
+}
+
+.portfolio-menu.projects {
+  left: 0;
+}
+
+.portfolio-menu.contact {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

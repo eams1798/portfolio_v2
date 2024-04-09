@@ -1,0 +1,21 @@
+.skills-container {
+  width: 100%;
+}
+
+.skill-description {
+  width: 35%;
+}
+
+.skill-description h2 {
+  color: #00A3FF;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.portfolio-menu.skills {
+  bottom: 0;
+}
