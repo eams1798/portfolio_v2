@@ -10,3 +10,11 @@ export interface hexagonSkill {
     z: number;
   };
 }
+
+export interface project {
+  name: string;
+  description: string;
+  tech: string[];
+  link: string;
+}
+

@@ -1,4 +1,23 @@
-import { hexagonSkill } from "../interfaces/index";
+import { hexagonSkill, project } from "../interfaces";
+
+export const projects: project[] = [
+  {
+    name: 'World Cup Score Simulator',
+    description: 'This is a project I created to simulate the results of the FIFA World Cup Qatar 2022. Includes tables by group and a general table to follow the performance of the 32 simulated teams. Allows to set the time zone and change the language between English and Spanish',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    link: 'https://eams1798.github.io/world-cup-score-simulator/'
+  }, {
+    name: 'BlogApp',
+    description: 'BlogApp is a blog application that allows users to create, read, update, and delete blog posts. Complemented with a CI/CD pipeline and Docker containerization. Made for the course of University of Helsinki "Full Stack Open".',
+    tech: ['TypeScript', 'React', 'Redux', 'Bootstrap', 'Jest', 'Cypress', 'ExpressJS', 'MongoDB', 'Github Actions', 'Docker', 'Nginx'],
+    link: 'https://github.com/eams1798/part12-containers-applications/tree/main/blogapp-docker'
+  }, {
+    name: 'AirBnB Clone',
+    description: 'An AirBnB clone that allows users to search available rooms and book them, and look for comments and reviews. Made for Holberton School final project.',
+    tech: ['HTML', 'CSS', 'jQuery', 'Python', 'Flask', 'MySQL', 'Nginx'],
+    link: 'https://github.com/eams1798/AirBnB_clone_v4/'
+  }
+]
 
 export const skills: hexagonSkill[] = [
   {
