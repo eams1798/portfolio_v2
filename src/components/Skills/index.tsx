@@ -1,7 +1,7 @@
 import { hexagonSkill } from "../../../interfaces";
 import PortfolioSection from "../PortfolioSection"
 import "../styles/Skills.css"
-import SkillGrid from "./SkillGrid"
+import HexagonGrid from "../HexagonGrid";
 import {skills as skillsData} from '../../../data/index';
 import { useState } from "react";
 import SkillDescription from "./SkillDescription";
@@ -14,7 +14,7 @@ const Skills = () => {
       <div className="skills-container">
         <h1 className="porfolio-title">Skills</h1>
         <div className="skills-list">
-          <SkillGrid skills={skills} setCurrentSkill={setCurrentSkill} />
+          <HexagonGrid items={skills} itemAction={setCurrentSkill} />
           <SkillDescription skill={currentSkill} />
         </div>
       </div>

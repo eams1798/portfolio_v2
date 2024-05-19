@@ -1,3 +1,11 @@
+.portfolio-sec-hero {
+  justify-content: flex-start;
+}
+
+.portfolio-sec-hero .lang-menu, .hero-container {
+  margin: 2rem 0;
+}
+
 .hero-container {
   display: flex;
   justify-content: space-between;

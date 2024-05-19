@@ -13,20 +13,25 @@
 }
 
 .portfolio-menu.hero {
+  display: flex;
   bottom: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
 
 .portfolio-menu.skills {
   right: 0;
+  bottom: 0;
 }
 
 .portfolio-menu.projects {
   left: 0;
+  bottom: 0;
 }
 
 .portfolio-menu.contact {
-  top: 0;
+  top: 2rem;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -6,9 +6,11 @@ const PortfolioMenu = ({sectionName}: {sectionName: string}) => {
     return (
       <div className="portfolio-menu hero">
         <p>Use the directional arrows to move between sections</p>
-        <button className="menu-btn">Skills</button>
-        <button className="menu-btn">Projects</button>
-        <button className="menu-btn">Contact</button>
+        <div className="mainmenu-buttons">
+          <button className="menu-btn">Skills</button>
+          <button className="menu-btn">Projects</button>
+          <button className="menu-btn">Contact</button>
+        </div>
       </div>
     )
   }
@@ -21,7 +23,7 @@ const PortfolioMenu = ({sectionName}: {sectionName: string}) => {
 
 const PortfolioSection = ({children, sectionName}: {children: React.ReactNode, sectionName: string}) => {
   return (
-    <section className="portfolio-sec">
+    <section className={`portfolio-sec portfolio-sec-${sectionName}`}>
       <LangMenu />
       {children}
       <PortfolioMenu sectionName={sectionName} />
