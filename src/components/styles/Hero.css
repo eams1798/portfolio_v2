@@ -1,5 +1,18 @@
-.portfolio-sec-hero {
+/* .portfolio-sec-hero {
   justify-content: flex-start;
+} */
+
+@media screen and (max-width: 576px) {
+  .hero-container {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .hero-container {
+    position: relative;
+    top: 5rem;
+  }
 }
 
 .portfolio-sec-hero .lang-menu, .hero-container {

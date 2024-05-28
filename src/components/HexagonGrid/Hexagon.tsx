@@ -1,5 +1,5 @@
 import { hexagonContact, hexagonSkill } from '../../../interfaces';
-import '../styles/SkillHexagon.css';
+import '../styles/Hexagon.css';
 import { AnyStringedFunction, SetSkillType } from '.';
 
 interface IHexagonProps {
@@ -16,9 +16,24 @@ const Hexagon = ({ item, startPoint, hexagonRadius, itemAction }: IHexagonProps)
   const y = { i: hexagonRadius / 2 * Math.sqrt(3), j: - hexagonRadius / 2 };
   const z = { i: hexagonRadius / 2 * Math.sqrt(3), j: hexagonRadius / 2 };
 
+  const HexagonShadowStyle: React.CSSProperties = {
+    zIndex: 1,
+    width: hexagonRadius * Math.sqrt(3),
+    height: hexagonRadius * 2,
+    filter: "drop-shadow(0 0 10px rgb(26, 172, 255))",
+    position: 'absolute',
+    top: startPoint.j + (x.j * item.coordinates.x + y.j * item.coordinates.y + z.j * item.coordinates.z) - 5,
+    left: startPoint.i + (x.i * item.coordinates.x + y.i * item.coordinates.y + z.i * item.coordinates.z) - 5,
+  }
+
   const HexagonStyle: React.CSSProperties = {
+    zIndex: 5,
     clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
     backgroundColor: '#d2d2d2',
+    backgroundImage: `url(${icon})`,
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: `${hexagonRadius * 1.2}px`,
     width: hexagonRadius * Math.sqrt(3),
     height: hexagonRadius * 2,
     position: 'absolute',
@@ -28,25 +43,32 @@ const Hexagon = ({ item, startPoint, hexagonRadius, itemAction }: IHexagonProps)
 
   if (item.type === 'skill') {
     return (
-    <div className="hexagon" style={HexagonStyle} onMouseEnter={() => (itemAction as SetSkillType)(item)}> {/* setSkill(skill) */}
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        <img src={icon} alt={name} title={name} />
-      </a>
-    </div>
-    )
+    <>
+      <div
+          className="hexagon"
+          title={name}
+          style={HexagonStyle}
+          onClick={() => window.open(url, '_blank')}
+          onMouseEnter={() => (itemAction as SetSkillType)(item)} />
+      <div className ="hexagon-shadow" style={HexagonShadowStyle} />
+    </>)
   } else if (item.type === 'contact' && item.action === 'copy') {
     return (
-      <div className="hexagon" style={HexagonStyle} onClick={() => (itemAction as AnyStringedFunction)(item.url)}> {/* copyToClipboard(contact) */}
-        <img src={icon} alt={name} title={`Copy: ${name}`} />
-      </div>
-    )
+      <>
+        <div className="hexagon" title={name} style={HexagonStyle} onClick={() => (itemAction as AnyStringedFunction)(item.url)} />
+        <div className ="hexagon-shadow" style={HexagonShadowStyle} />
+      </> 
+    );
   } else {
     return (
-      <div className="hexagon" style={HexagonStyle}>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          <img src={icon} alt={name} title={name} />
-        </a>
-      </div>
+    <>
+      <div
+          className="hexagon"
+          title={name}
+          style={HexagonStyle}
+          onClick={() => window.open(url, '_blank')} />
+      <div className ="hexagon-shadow" style={HexagonShadowStyle} />
+    </>
     )
   }
 };

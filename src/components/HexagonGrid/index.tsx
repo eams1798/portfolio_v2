@@ -8,10 +8,11 @@ export type AnyStringedFunction = (item: string) => void
 interface IHexagonGridProps {
   items: hexagonSkill[] | hexagonContact[]
   itemAction: SetSkillType | AnyStringedFunction
+  hexagonRadius: number
+  otherClassNames?: string[]
 }
 
-const HexagonGrid = ({ items, itemAction }: IHexagonGridProps) => {
-  const [hexagonRadius, ] = useState<number>(50);
+const HexagonGrid = ({ items, itemAction, hexagonRadius, otherClassNames }: IHexagonGridProps) => {
   const [gridDimensions, setGridDimensions] = useState<{width: number; height: number}>({width: 0, height: 0});
   const [startPoint, setStartPoint] = useState<{i: number; j: number}>({i: 0, j: 0});
 
@@ -55,7 +56,7 @@ const HexagonGrid = ({ items, itemAction }: IHexagonGridProps) => {
   }, []);
 
   return (
-    <div className="hexagon-grid" style={GridStyle}>
+    <div className={`hexagon-grid ${otherClassNames?.join(' ')}`} style={GridStyle}>
       {items.map(item => {
         return (
           <Hexagon

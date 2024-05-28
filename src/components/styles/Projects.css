@@ -33,3 +33,12 @@
   width: 120px;
   height: 80px;
 }
+
+.current-project, .other-project {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.other-project:hover {
+  border: 5px solid #00A3FF;
+}

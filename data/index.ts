@@ -28,19 +28,19 @@ export const contacts: hexagonContact[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
     url: 'https://github.com/eams1798',
     coordinates: {
-      x: -1,
-      y: 1,
+      x: 0,
+      y: 0,
       z: 0
     },
     type: 'contact',
     action: 'visit'
   }, {
     name: 'Medium',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/medium/medium-original.svg',
-    url: 'https://medium.com/@eams1798',
+    icon: 'https://cdn.iconscout.com/icon/free/png-256/free-medium-3855923-3201557.png?f=webp',
+    url: 'https://eams.medium.com/',
     coordinates: {
-      x: -1,
-      y: 0,
+      x: 0,
+      y: 1,
       z: 1
     },
     type: 'contact',
@@ -51,33 +51,33 @@ export const contacts: hexagonContact[] = [
     url: 'https://www.linkedin.com/in/eams1798/',
     coordinates: {
       x: 0,
-      y: 1,
-      z: 1
+      y: 2,
+      z: 2
     },
     type: 'contact',
     action: 'visit'
   }, {
     name: "Gmail",
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gmail/gmail-original.svg',
+    icon: 'https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png',
     url: 'eams1798@gmail.com',
     coordinates: {
       x: 1,
-      y: 1,
+      y: 0,
       z: 1
     },
     type: 'contact',
     action: 'copy'
   }, {
     name: "WhatsApp",
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/whatsapp/whatsapp-original.svg',
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png',
     url: 'https://wa.me/17812493698',
     coordinates: {
       x: 1,
-      y: 0,
-      z: -1
+      y: 1,
+      z: 2
     },
     type: 'contact',
-    action: 'copy'
+    action: 'visit'
   }
 ]
 

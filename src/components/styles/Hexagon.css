@@ -1,0 +1,23 @@
+.hexagon a {
+  display: block;
+}
+
+.hexagon:hover {
+  z-index: 100 !important;
+}
+
+.hexagon:hover + .hexagon-shadow {
+  z-index: 50 !important;
+}
+
+.hexagon:hover + .hexagon-shadow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(5px, 5px);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background: #d2d2d2;
+}

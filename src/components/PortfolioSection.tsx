@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap"
 import LangMenu from "./LangMenu"
 import "./styles/PortfolioSection.css"
 
@@ -21,13 +22,13 @@ const PortfolioMenu = ({sectionName}: {sectionName: string}) => {
   )
 }
 
-const PortfolioSection = ({children, sectionName}: {children: React.ReactNode, sectionName: string}) => {
+const PortfolioSection = ({children, sectionName, otherClassNames}: {children: React.ReactNode, sectionName: string, otherClassNames?: string[]}) => {
   return (
-    <section className={`portfolio-sec portfolio-sec-${sectionName}`}>
+    <Container className={`portfolio-sec portfolio-sec-${sectionName} ${otherClassNames?.join(" ") || ""}`}>
       <LangMenu />
       {children}
       <PortfolioMenu sectionName={sectionName} />
-    </section>
+    </Container>
   )
 }
 

@@ -1,4 +1,5 @@
 .portfolio-sec {
+  padding: 2rem;
   position: relative;
   min-height: 100vh;
   display: flex;

@@ -1,7 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/LinesDots.css';
 
 const Circle = () => {
+
   const randomBetween = (min: number, max: number): number => {
     return Math.random() * (max - min) + min;
   }
