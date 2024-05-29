@@ -1,11 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import '../styles/LinesDots.css';
 
-const Circle = () => {
-
+const Circle = ({windowWidth}: {windowWidth: number}) => {
   const randomBetween = (min: number, max: number): number => {
     return Math.random() * (max - min) + min;
   }
+
+  useEffect(() => {
+    const lines = document.querySelectorAll('.circle');
+    lines.forEach((line) => {
+      line.remove();
+    });
+  }, [windowWidth]);
 
   const lines = (): void => {
     const sizeW = Math.random() * 12;

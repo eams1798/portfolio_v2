@@ -9,10 +9,11 @@ interface IHexagonGridProps {
   items: hexagonSkill[] | hexagonContact[]
   itemAction: SetSkillType | AnyStringedFunction
   hexagonRadius: number
+  windowWidth: number
   otherClassNames?: string[]
 }
 
-const HexagonGrid = ({ items, itemAction, hexagonRadius, otherClassNames }: IHexagonGridProps) => {
+const HexagonGrid = ({ items, itemAction, hexagonRadius, windowWidth,otherClassNames }: IHexagonGridProps) => {
   const [gridDimensions, setGridDimensions] = useState<{width: number; height: number}>({width: 0, height: 0});
   const [startPoint, setStartPoint] = useState<{i: number; j: number}>({i: 0, j: 0});
 
@@ -64,7 +65,8 @@ const HexagonGrid = ({ items, itemAction, hexagonRadius, otherClassNames }: IHex
             item={item}
             startPoint={startPoint}
             hexagonRadius={hexagonRadius}
-            itemAction={itemAction} />
+            itemAction={itemAction}
+            windowWidth={windowWidth} />
         );
       })}
     </div>

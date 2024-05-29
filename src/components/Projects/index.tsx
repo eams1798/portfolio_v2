@@ -5,7 +5,7 @@ import PortfolioSection from "../PortfolioSection"
 import "../styles/Projects.css"
 import { Col, Container, Row } from "react-bootstrap";
 
-const Projects = () => {
+const Projects = ({ windowWidth }: { windowWidth: number}) => {
   const [projects, ] = useState<IProject[]>(listOfProjects);
   const [currentProject, setCurrentProject] = useState<IProject>(projects[0]);
 
@@ -15,7 +15,9 @@ const Projects = () => {
         <h1 className="porfolio-title mb-5">Projects</h1>
         <Row className="projects-container">
           <Col lg={6} className="projects-description my-3">
-            <h2>{currentProject.name}</h2>
+            <a href={currentProject.url} target="_blank" id="current-project-title">
+              <h2>{currentProject.name}</h2>
+            </a>
             <p>{currentProject.description}</p>
             <p>Technologies: {currentProject.tech.join(", ")}</p>
           </Col>
@@ -31,7 +33,10 @@ const Projects = () => {
             <div className="other-projects">
             {
               projects.map((project) => (
-                <a key={project.name} href={project.url} target="_blank">
+                <a
+                  key={project.name}
+                  href={windowWidth > 992 ? project.url : "#current-project-title"}
+                  target={windowWidth > 992 ? "_blank" : ""}>
                   <div
                     className="other-project"
                     style={{

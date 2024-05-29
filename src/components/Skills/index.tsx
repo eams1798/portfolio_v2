@@ -7,7 +7,7 @@ import { useState } from "react";
 import SkillDescription from "./SkillDescription";
 import { Container, Row } from "react-bootstrap";
 
-const Skills = () => {
+const Skills = ({windowWidth}: {windowWidth: number}) => {
   const [skills, ] = useState<hexagonSkill[]>(skillsData);
   const [currentSkill, setCurrentSkill] = useState<hexagonSkill>(skills[0]);
   return (
@@ -15,7 +15,12 @@ const Skills = () => {
       <Container className="skills-container">
         <h1 className="porfolio-title mb-5">Skills</h1>
         <Row className="skills-list d-flex justify-content-evenly align-items-center">
-          <HexagonGrid items={skills} itemAction={setCurrentSkill} hexagonRadius={50} otherClassNames={["col-auto", "col-lg-8", "my-3"]} />
+          <HexagonGrid
+            items={skills}
+            itemAction={setCurrentSkill}
+            hexagonRadius={50}
+            windowWidth={windowWidth}
+            otherClassNames={["col-auto", "col-lg-8", "my-3"]} />
           <SkillDescription skill={currentSkill} />
         </Row>
       </Container>

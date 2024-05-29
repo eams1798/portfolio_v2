@@ -7,9 +7,10 @@ interface IHexagonProps {
   startPoint: {i: number; j: number}
   hexagonRadius: number
   itemAction: SetSkillType | AnyStringedFunction
+  windowWidth: number
 }
 
-const Hexagon = ({ item, startPoint, hexagonRadius, itemAction }: IHexagonProps) => {
+const Hexagon = ({ item, startPoint, hexagonRadius, itemAction, windowWidth }: IHexagonProps) => {
   const { name, icon, url } = item;
 
   const x = { i: 0, j: hexagonRadius };
@@ -48,14 +49,18 @@ const Hexagon = ({ item, startPoint, hexagonRadius, itemAction }: IHexagonProps)
           className="hexagon"
           title={name}
           style={HexagonStyle}
-          onClick={() => window.open(url, '_blank')}
+          onClick={ windowWidth > 992 ? (() => window.open(url, '_blank')): (() => window.open("#skill-title", '_self')) }
           onMouseEnter={() => (itemAction as SetSkillType)(item)} />
       <div className ="hexagon-shadow" style={HexagonShadowStyle} />
     </>)
   } else if (item.type === 'contact' && item.action === 'copy') {
     return (
       <>
-        <div className="hexagon" title={name} style={HexagonStyle} onClick={() => (itemAction as AnyStringedFunction)(item.url)} />
+        <div
+            className="hexagon"
+            title={name}
+            style={HexagonStyle}
+            onClick={() => (itemAction as AnyStringedFunction)(item.url)} />
         <div className ="hexagon-shadow" style={HexagonShadowStyle} />
       </> 
     );

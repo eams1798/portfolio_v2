@@ -1,12 +1,12 @@
-/* import LinesDots from "./LinesDots" */
+import LinesDots from "./LinesDots"
 import PortfolioSection from "../PortfolioSection"
 import "../styles/Hero.css"
 import { Col, Container, Row } from "react-bootstrap"
 
-const Hero = () => {
+const Hero = ({windowWidth}: {windowWidth: number}) => {
   return (
     <PortfolioSection sectionName="hero" otherClassNames={["justify-content-start"]}>
-      {/* <LinesDots /> */}
+      <LinesDots windowWidth={windowWidth} />
       <Container className="hero-container" fluid>
         <Row className="justify-content-around">
           <Col className="hero-info py-5" sm={7}>

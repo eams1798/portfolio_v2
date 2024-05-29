@@ -8,12 +8,13 @@
   align-items: center;
 }
 
-.portfolio-menu {
-  position: absolute;
-  transform: translateY(-100%);
-}
+/* .portfolio-menu {
+  position: fixed !important;
+  z-index: 1000;
+  width: auto;
+} */
 
-.portfolio-menu.hero {
+/* .portfolio-menu.hero {
   display: flex;
   bottom: 0;
   flex-direction: column;
@@ -35,4 +36,4 @@
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
