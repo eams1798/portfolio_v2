@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect } from 'react';
 import '../styles/LinesDots.css';
 
 const Circle = ({windowWidth}: {windowWidth: number}) => {

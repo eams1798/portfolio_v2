@@ -18,8 +18,8 @@ const Projects = ({ windowWidth }: { windowWidth: number}) => {
             <a href={currentProject.url} target="_blank" id="current-project-title">
               <h2>{currentProject.name}</h2>
             </a>
-            <p>{currentProject.description}</p>
-            <p>Technologies: {currentProject.tech.join(", ")}</p>
+            <p className="fs-5">{currentProject.description}</p>
+            <p className="fs-5">Technologies: {currentProject.tech.join(", ")}</p>
           </Col>
           <Col lg={6} className="projects-list my-3">
             <div

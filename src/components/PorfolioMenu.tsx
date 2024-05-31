@@ -3,7 +3,7 @@ import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap'
 const PorfolioMenu = () => (
   <Navbar expand="lg" variant='dark' className="portfolio-menu bg-dark sticky-top">
       <Container>
-        <Navbar.Brand href="#">{"<misotideas/>"}</Navbar.Brand>
+        <Navbar.Brand href="#">My Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
           <Nav className="me-2">

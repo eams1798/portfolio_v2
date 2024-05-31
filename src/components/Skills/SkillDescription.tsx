@@ -6,7 +6,7 @@ const SkillDescription = ({skill}: {skill: hexagonSkill}) => {
       <a href={skill.url} target="_blank" id="skill-title">
         <h2>{skill.name}</h2>
       </a>
-      <p>{skill.description}</p>
+      <p className="fs-5">{skill.description}</p>
     </div>
   )
 }
