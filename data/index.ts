@@ -3,19 +3,19 @@ import { hexagonContact, hexagonSkill, project } from "../interfaces";
 export const projects: project[] = [
   {
     name: 'World Cup Score Simulator',
-    description: 'This is a project I created to simulate the results of the FIFA World Cup Qatar 2022. Includes tables by group and a general table to follow the performance of the 32 simulated teams. Allows to set the time zone and change the language between English and Spanish',
+    description: 'wcss-description',
     tech: ['HTML', 'CSS', 'JavaScript'],
     url: 'https://eams1798.github.io/world-cup-score-simulator/',
     image: "https://raw.githubusercontent.com/eams1798/projects-images/main/portfolio_v2/world-cup-score-simulator.png"
   }, {
     name: 'BlogApp',
-    description: 'BlogApp is a blog application that allows users to create, read, update, and delete blog posts. Complemented with a CI/CD pipeline and Docker containerization. Made for the course of University of Helsinki "Full Stack Open".',
+    description: 'blogapp-description',
     tech: ['TypeScript', 'React', 'Redux', 'Bootstrap', 'Jest', 'Cypress', 'ExpressJS', 'MongoDB', 'Github Actions', 'Docker', 'Nginx'],
     url: 'https://github.com/eams1798/part12-containers-applications/tree/main/blogapp-docker',
     image: "https://raw.githubusercontent.com/eams1798/projects-images/main/portfolio_v2/blogapp.png"
   }, {
     name: 'AirBnB Clone',
-    description: 'An AirBnB clone that allows users to search available rooms and book them, and look for comments and reviews. Made for Holberton School final project.',
+    description: 'airbnb-clone-description',
     tech: ['HTML', 'CSS', 'jQuery', 'Python', 'Flask', 'MySQL', 'Nginx'],
     url: 'https://github.com/eams1798/AirBnB_clone_v4/',
     image: "https://raw.githubusercontent.com/eams1798/projects-images/main/portfolio_v2/AirBnB_clone_v4.png"
@@ -86,7 +86,7 @@ export const skills: hexagonSkill[] = [
     id: 'html',
     name: 'HTML',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-    description: 'Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.',
+    description: "html-description",
     url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     coordinates: {
       x: 1,
@@ -98,7 +98,7 @@ export const skills: hexagonSkill[] = [
     id: 'css',
     name: 'CSS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-    description: 'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.',
+    description: "css-description",
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     coordinates: {
       x: 0,
@@ -110,7 +110,7 @@ export const skills: hexagonSkill[] = [
     id: 'javascript',
     name: 'JavaScript',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-    description: 'JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.',
+    description: "javascript-description",
     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     coordinates: {
       x: 2,
@@ -122,7 +122,7 @@ export const skills: hexagonSkill[] = [
     id: 'react',
     name: 'React',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    description: 'React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.',
+    description: "react-description",
     url: 'https://reactjs.org/',
     coordinates: {
       x: 1,
@@ -134,7 +134,7 @@ export const skills: hexagonSkill[] = [
     id: 'sass',
     name: 'Sass',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
-    description: 'Sass is an extension of CSS, adding additional features like variables, nesting, mixins, and more.',
+    description: "sass-description",
     url: 'https://sass-lang.com/',
     coordinates: {
       x: 0,
@@ -146,7 +146,7 @@ export const skills: hexagonSkill[] = [
     id: 'typescript',
     name: 'TypeScript',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-    description: 'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.',
+    description: "typescript-description",
     url: 'https://www.typescriptlang.org/',
     coordinates: {
       x: 2,
@@ -158,7 +158,7 @@ export const skills: hexagonSkill[] = [
     id: 'express',
     name: 'Express',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
-    description: 'Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.',
+    description: "express-description",
     url: 'https://expressjs.com/',
     coordinates: {
       x: 1,
@@ -170,7 +170,7 @@ export const skills: hexagonSkill[] = [
     id: 'flask',
     name: 'Flask',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
-    description: 'Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions.',
+    description: "flask-description",
     url: 'https://flask.palletsprojects.com/',
     coordinates: {
       x: 0,
@@ -182,7 +182,7 @@ export const skills: hexagonSkill[] = [
     id: 'mongodb',
     name: 'MongoDB',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
-    description: 'MongoDB is a source-available cross-platform document-oriented database program.',
+    description: "mongodb-description",
     url: 'https://www.mongodb.com/',
     coordinates: {
       x: 3,
@@ -194,7 +194,7 @@ export const skills: hexagonSkill[] = [
     id: 'nodejs',
     name: 'Node.js',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-    description: 'Node.js is a JavaScript runtime built on Chrome\'s V8 JavaScript engine.',
+    description: "nodejs-description",
     url: 'https://nodejs.org/en/',
     coordinates: {
       x: 2,
@@ -206,7 +206,7 @@ export const skills: hexagonSkill[] = [
     id: 'python',
     name: 'Python',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-    description: 'Python is a high-level, general-purpose programming language.',
+    description: "python-description",
     url: 'https://www.python.org/',
     coordinates: {
       x: 1,
@@ -214,11 +214,23 @@ export const skills: hexagonSkill[] = [
       z: 3
     },
     type: 'skill'
+  },{
+    id: 'bootstrap',
+    name: 'Bootstrap',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
+    description: "bootstrap-description",
+    url: 'https://getbootstrap.com/',
+    coordinates: {
+      x: 0,
+      y: 3,
+      z: 3
+    },
+    type: 'skill'
   }, {
     id: 'redis',
     name: 'Redis',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
-    description: 'Redis is an in-memory database that persists data in the form of key-value pairs.',
+    description: "redis-description",
     url: 'https://redis.io/',
     coordinates: {
       x: 3,
@@ -230,7 +242,7 @@ export const skills: hexagonSkill[] = [
     id: 'mysql',
     name: 'MySQL',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-    description: 'MySQL is an open source relational database management system.',
+    description: "mysql-description",
     url: 'https://www.mysql.com/',
     coordinates: {
       x: 2,
@@ -242,7 +254,7 @@ export const skills: hexagonSkill[] = [
     id: 'git',
     name: 'Git',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-    description: 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.',
+    description: "git-description",
     url: 'https://git-scm.com/',
     coordinates: {
       x: 1,
@@ -254,7 +266,7 @@ export const skills: hexagonSkill[] = [
     id: 'graphql',
     name: 'GraphQL',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
-    description: 'GraphQL is a query language for your API. It lets you fetch and integrate data from a variety of sources.',
+    description: "graphql-description",
     url: 'https://graphql.org/',
     coordinates: {
       x: 3,
@@ -266,7 +278,7 @@ export const skills: hexagonSkill[] = [
     id: 'bash',
     name: 'Bash',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',
-    description: 'Bash is a Unix shell and command language.',
+    description: "bash-description",
     url: 'https://www.gnu.org/software/bash/',
     coordinates: {
       x: 2,
@@ -278,7 +290,7 @@ export const skills: hexagonSkill[] = [
     id: 'github-actions',
     name: 'GitHub Actions',
     icon: 'https://seeklogo.com/images/G/github-actions-logo-031704BDC6-seeklogo.com.png',
-    description: 'GitHub Actions is a continuous integration service for GitHub.',
+    description: "github-actions-description",
     url: 'https://github.com/features/actions',
     coordinates: {
       x: 1,
@@ -290,7 +302,7 @@ export const skills: hexagonSkill[] = [
     id: 'docker',
     name: 'Docker',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-    description: 'Docker is a package manager for containerized applications.',
+    description: "docker-description",
     url: 'https://www.docker.com/',
     coordinates: {
       x: 4,
@@ -302,7 +314,7 @@ export const skills: hexagonSkill[] = [
     id: 'nginx',
     name: 'Nginx',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
-    description: 'Nginx is an HTTP and reverse proxy server.',
+    description: "nginx-description",
     url: 'https://nginx.org/',
     coordinates: {
       x: 3,

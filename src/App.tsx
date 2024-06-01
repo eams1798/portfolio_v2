@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import './App.css'
 import Contact from './components/Contact'
 import Hero from './components/Hero'
@@ -6,7 +6,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import PorfolioMenu from './components/PorfolioMenu'
 
-function App() {
+const SuspensedApp = () => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -26,6 +26,14 @@ function App() {
         <Contact windowWidth={windowWidth} />
       </div>
     </div>
+  )
+}
+
+const App = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SuspensedApp />
+    </Suspense>
   )
 }
 

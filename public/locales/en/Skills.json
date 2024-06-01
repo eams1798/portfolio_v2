@@ -1,0 +1,23 @@
+{
+    "title": "Skills",
+    "html-description": "Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.",
+    "css-description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.",
+    "javascript-description": "JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.",
+    "react-description": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.",
+    "sass-description": "Sass is an extension of CSS, adding additional features like variables, nesting, mixins, and more.",
+    "typescript-description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+    "express-description": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+    "flask-description": "Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions.",
+    "mongodb-description": "MongoDB is a source-available cross-platform document-oriented database program.",
+    "nodejs-description": "Node.js is a JavaScript runtime built on Chrome's JavaScript V8 engine.",
+    "python-description": "Python is a high-level, general-purpose programming language. Recently considered for the development of applications that have artificial intelligence.",
+    "bootstrap-description": "Bootstrap is an open source framework for developing websites and web applications.",
+    "redis-description": "Redis is an in-memory database that persists data in the form of key-value pairs.",
+    "mysql-description": "MySQL is an open source relational database management system.",
+    "git-description": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+    "graphql-description": "GraphQL is a query language for your API. It lets you fetch and integrate data from a variety of sources.",
+    "bash-description": "Bash is a Unix shell and command language.",
+    "github-actions-description": "GitHub Actions is a continuous integration service for GitHub.",
+    "docker-description": "Docker is an open source project to package up and run applications in containers.",
+    "nginx-description": "Nginx is an HTTP and reverse proxy server."
+}

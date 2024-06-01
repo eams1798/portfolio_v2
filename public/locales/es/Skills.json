@@ -1,0 +1,23 @@
+{
+    "title": "Habilidades",
+    "html-description": "Hypertext Markup Language (HTML) es el lenguaje de marcas estándar para crear páginas web y aplicaciones web.",
+    "css-description": "Cascading Style Sheets (CSS) es un lenguaje de hojas de estilo utilizado para describir la presentación de un documento escrito en un lenguaje de marcado como HTML.",
+    "javascript-description": "JavaScript, a menudo abreviado como JS, es un lenguaje de programación que cumple con la especificación ECMAScript.",
+    "react-description": "React es una biblioteca JavaScript para construir interfaces de usuario. Es mantenido por Facebook y una comunidad de desarrolladores individuales y empresas.",
+    "sass-description": "Sass es una extensión de CSS, agregando funciones adicionales como variables, anidados, mixins y más.",
+    "typescript-description": "TypeScript es un lenguaje de programación fuertemente tipado que se basa en JavaScript y le brinda mejores herramientas a cualquier escala.",
+    "express-description": "Express es un marco de aplicación web Node.js mínimo y flexible que proporciona un conjunto sólido de funciones para aplicaciones web y móviles.",
+    "flask-description": "Flask es un microframework para Python basado en Werkzeug, Jinja 2 y buenas intenciones.",
+    "mongodb-description": "MongoDB es un programa de base de datos orientado a documentos multiplataforma y disponible en código fuente.",
+    "nodejs-description": "Node.js es un tiempo de ejecución de JavaScript integrado en el motor JavaScript V8 de Chrome.",
+    "python-description": "Python es un lenguaje de programación de alto nivel y de propósito general. Últimamente considerado para el desarrollo de aplicaciones que cuentan con inteligencia artificial.",
+    "bootstrap-description": "Bootstrap es un framework de código abierto para crear sitios web y aplicaciones web.",
+    "redis-description": "Redis es una base de datos en memoria que persiste los datos en la forma de pares clave-valor.",
+    "mysql-description": "MySQL es un sistema de gestión de bases de datos relacionales de código abierto.",
+    "git-description": "Git es un sistema de control de versiones distribuido gratuito y de código abierto diseñado para manejar todo, desde proyectos pequeños hasta proyectos muy grandes con velocidad y eficiencia.",
+    "graphql-description": "GraphQL es un lenguaje de consulta para su API. Le permite recuperar e integrar datos de una variedad de fuentes.",
+    "bash-description": "Bash es un shell de Unix y un lenguaje de comandos.",
+    "github-actions-description": "GitHub Actions es un servicio de integración continua para GitHub.",
+    "docker-description": "Docker es un proyecto de código abierto para construir y ejecutar aplicaciones en contenedores.",
+    "nginx-description": "Nginx es un servidor HTTP y un proxy inverso."
+}

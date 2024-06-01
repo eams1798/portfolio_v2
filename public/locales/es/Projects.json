@@ -1,0 +1,7 @@
+{
+    "title": "Proyectos",
+    "wcss-description": "Este es un proyecto que creé para simular los resultados de la Copa Mundial de la FIFA Qatar 2022. Incluye tablas por grupo y una tabla general para seguir el desempeño de los 32 equipos simulados. Permite configurar la zona horaria y cambiar el idioma entre inglés y español.",
+    "blogapp-description": "BlogApp es una aplicación de blog que permite a los usuarios crear, leer, actualizar y eliminar publicaciones de blog. Complementado con una canalización de CI/CD y contenedorización Docker. Hecho para el curso de la Universidad de Helsinki \"Full Stack Open\".",
+    "airbnb-clone-description": "Un clon de AirBnB que permite a los usuarios buscar habitaciones disponibles, reservarlas y buscar comentarios y reseñas. Realizado para el proyecto final de Holberton School.",
+    "tech": "Tecnologías"
+}
