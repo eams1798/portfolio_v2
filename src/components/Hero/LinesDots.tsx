@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/LinesDots.css';
 
-const Circle = ({windowWidth}: {windowWidth: number}) => {
+const LinesDots = ({windowWidth}: {windowWidth: number}) => {
   const randomBetween = (min: number, max: number): number => {
     return Math.random() * (max - min) + min;
   }
@@ -39,4 +39,4 @@ const Circle = ({windowWidth}: {windowWidth: number}) => {
   return null;
 };
 
-export default Circle;
+export default LinesDots;
