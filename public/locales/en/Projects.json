@@ -3,5 +3,6 @@
     "wcss-description": "This is a project I created to simulate the results of the FIFA World Cup Qatar 2022. Includes tables by group and a general table to follow the performance of the 32 simulated teams. Allows to set the time zone and change the language between English and Spanish",
     "blogapp-description": "BlogApp is a blog application that allows users to create, read, update, and delete blog posts. Complemented with a CI/CD pipeline and Docker containerization. Made for the course of University of Helsinki \"Full Stack Open\".",
     "airbnb-clone-description": "An AirBnB clone that allows users to search available rooms and book them, and look for comments and reviews. Made for Holberton School final project.",
-    "tech": "Technologies"
+    "car-merged-marketplace-description":"This app is a marketplace showing cars from different sources (i.e. Facebook, Craigslist, etc.) using some given filters to bring you the best deal. You can also try the AI feature to get more information about the car you are interested in.",
+    "tech": "Tech stack"
 }

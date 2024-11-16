@@ -2,6 +2,13 @@ import { hexagonContact, hexagonSkill, project } from "../interfaces";
 
 export const projects: project[] = [
   {
+    name: 'Car Merged Marketplace',
+    description: 'car-merged-marketplace-description',
+    tech: ['React','Typescript', 'Google Maps API', 'Node.js', 'Express.js', 'Playwright', 'Claude AI API', 'Apache'],
+    url: 'https://github.com/eams1798/best-car-deals',
+    image: "https://raw.githubusercontent.com/eams1798/projects-images/main/portfolio_v2/car-merged-marketplace.png"
+  },
+  {
     name: 'World Cup Score Simulator',
     description: 'wcss-description',
     tech: ['HTML', 'CSS', 'JavaScript'],
@@ -93,6 +100,7 @@ export const skills: hexagonSkill[] = [
       y: -1,
       z: 0
     },
+    experience: '+3 years',
     type: 'skill'
   }, {
     id: 'css',
@@ -105,6 +113,7 @@ export const skills: hexagonSkill[] = [
       y: 0,
       z: 0
     },
+    experience: '+3 years',
     type: 'skill'
   }, {
     id: 'javascript',
@@ -117,6 +126,7 @@ export const skills: hexagonSkill[] = [
       y: -1,
       z: 1
     },
+    experience: '+3 years',
     type: 'skill'
   },{
     id: 'react',
@@ -129,6 +139,7 @@ export const skills: hexagonSkill[] = [
       y: 0,
       z: 1
     },
+    experience: '+2 years',
     type: 'skill'
   }, {
     id: 'sass',
@@ -141,6 +152,7 @@ export const skills: hexagonSkill[] = [
       y: 1,
       z: 1
     },
+    experience: 'Basic knowledge',
     type: 'skill'
   }, {
     id: 'typescript',
@@ -153,6 +165,7 @@ export const skills: hexagonSkill[] = [
       y: 0,
       z: 2
     },
+    experience: '2 years',
     type: 'skill'
   }, {
     id: 'express',
@@ -165,6 +178,7 @@ export const skills: hexagonSkill[] = [
       y: 1,
       z: 2
     },
+    experience: '+1 year',
     type: 'skill'
   }, {
     id: 'flask',
@@ -177,6 +191,7 @@ export const skills: hexagonSkill[] = [
       y: 2,
       z: 2
     },
+    experience: '6 months',
     type: 'skill'
   }, {
     id: 'mongodb',
@@ -189,6 +204,7 @@ export const skills: hexagonSkill[] = [
       y: 0,
       z: 3
     },
+    experience: '1 year',
     type: 'skill'
   }, {
     id: 'nodejs',
@@ -201,6 +217,7 @@ export const skills: hexagonSkill[] = [
       y: 1,
       z: 3
     },
+    experience: '+2 years',
     type: 'skill'
   }, {
     id: 'python',
@@ -213,6 +230,7 @@ export const skills: hexagonSkill[] = [
       y: 2,
       z: 3
     },
+    experience: '1 year',
     type: 'skill'
   },{
     id: 'bootstrap',
@@ -225,6 +243,7 @@ export const skills: hexagonSkill[] = [
       y: 3,
       z: 3
     },
+    experience: '1 year',
     type: 'skill'
   }, {
     id: 'redis',
@@ -237,6 +256,7 @@ export const skills: hexagonSkill[] = [
       y: 1,
       z: 4
     },
+    experience: 'Basic knowledge',
     type: 'skill'
   }, {
     id: 'mysql',
@@ -249,6 +269,7 @@ export const skills: hexagonSkill[] = [
       y: 2,
       z: 4
     },
+    experience: '6 months',
     type: 'skill'
   }, {
     id: 'git',
@@ -261,6 +282,7 @@ export const skills: hexagonSkill[] = [
       y: 3,
       z: 4
     },
+    experience: '+3 years',
     type: 'skill'
   }, {
     id: 'graphql',
@@ -273,6 +295,7 @@ export const skills: hexagonSkill[] = [
       y: 2,
       z: 5
     },
+    experience: 'Basic knowledge',
     type: 'skill'
   }, {
     id: 'bash',
@@ -285,6 +308,7 @@ export const skills: hexagonSkill[] = [
       y: 3,
       z: 5
     },
+    experience: '+3 years',
     type: 'skill'
   }, {
     id: 'github-actions',
@@ -297,6 +321,7 @@ export const skills: hexagonSkill[] = [
       y: 4,
       z: 5
     },
+    experience: 'Basic knowledge',
     type: 'skill'
   }, {
     id: 'docker',
@@ -309,6 +334,7 @@ export const skills: hexagonSkill[] = [
       y: 2,
       z: 6
     },
+    experience: 'Basic knowledge',
     type: 'skill'
   }, {
     id: 'nginx',
@@ -321,6 +347,19 @@ export const skills: hexagonSkill[] = [
       y: 3,
       z: 6
     },
+    experience: '6 months',
     type: 'skill'
+  },
+  {
+    id: "soft_skills",
+    name: "Soft skills",
+    icon: "https://cdn-icons-png.flaticon.com/512/9631/9631219.png",
+    description: "softskills-description",
+    coordinates: {
+      x: 2,
+      y: 4,
+      z: 6
+    },
+    type: "skill"
   }
 ]

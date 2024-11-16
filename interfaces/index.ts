@@ -18,9 +18,10 @@ export interface hexagonSkill {
   name: string;
   icon: string;
   description: string;
-  url: string;
+  url?: string;
   coordinates: coordinate
   type: 'skill';
+  experience?: string;
 }
 
 export interface project {

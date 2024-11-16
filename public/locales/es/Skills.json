@@ -19,5 +19,11 @@
     "bash-description": "Bash es un shell de Unix y un lenguaje de comandos.",
     "github-actions-description": "GitHub Actions es un servicio de integración continua para GitHub.",
     "docker-description": "Docker es un proyecto de código abierto para construir y ejecutar aplicaciones en contenedores.",
-    "nginx-description": "Nginx es un servidor HTTP y un proxy inverso."
+    "nginx-description": "Nginx es un servidor HTTP y un proxy inverso.",
+    "experience": "Experiencia",
+    "years": "años",
+    "year": "año",
+    "months": "meses",
+    "basic": "Conocimiento básico",
+    "softskills-description": "Capacidad de aprendizaje continuo.\nBusqueda de nuevas formas de realizar tareas asignadas.\nCapacidad de trabajo en equipo.\nComunicación asertiva.\nResolución de problemas basada en conocimientos adquiridos."
 }

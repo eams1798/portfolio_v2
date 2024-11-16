@@ -49,7 +49,7 @@ const Hexagon = ({ item, startPoint, hexagonRadius, itemAction, windowWidth }: I
           className="hexagon"
           title={name}
           style={HexagonStyle}
-          onClick={ windowWidth > 992 ? (() => window.open(url, '_blank')): (() => window.open("#skill-title", '_self')) }
+          onClick={ windowWidth > 992 ? (() => {if (url) window.open(url, '_blank')}): (() => window.open("#skill-title", '_self')) }
           onMouseEnter={() => (itemAction as SetSkillType)(item)} />
       <div className ="hexagon-shadow" style={HexagonShadowStyle} />
     </>)
