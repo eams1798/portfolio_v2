@@ -8,11 +8,13 @@ a#current-project-title {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .projects-description {
   width: 60%;
+  position: relative;
+  bottom: 2rem;
 }
 
 .projects-description h2 {

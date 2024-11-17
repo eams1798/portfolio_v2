@@ -32,7 +32,7 @@ const Projects = ({ windowWidth }: { windowWidth: number}) => {
                 width: "300px",
                 height: "200px",
                 }} />
-            <div className="other-projects">
+            <div className="other-projects w-50">
             {
               projects.map((project) => (
                 <a
